@@ -19,7 +19,7 @@ namespace InterfaceExercise
         }
 
         public int HowManyPassagers { get; set; } = 8;
-        public string IsItAllTerrian { get; set; } = "Yep in gear";
+        public string IsItAllTerrian { get; set; } = "Yep in correct gear";
 
         public string Make { get; set; } = "Lexus";
         public string Model { get; set; } = "XL90";

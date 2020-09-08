@@ -15,7 +15,6 @@ namespace InterfaceExercise
         public int Year { get; set; }
         public string TypeOfGas { get; set; }
 
-
-
+       
     }
 }
