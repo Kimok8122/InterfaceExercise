@@ -14,29 +14,38 @@ namespace InterfaceExercise
             var suv = new SUV();
 
             var vehicles = new List<IVehicle>() { car, truck, suv };
+            var company = new List<ICompany>() { car, truck, suv };
 
 
-            foreach (var vehicle in vehicles)
-            {
-                
-                Console.WriteLine($"------------------");
+           
+                foreach (var vehicle in vehicles)
+                {   
 
-                Console.WriteLine($"Make: {vehicle.Make}, Model: {vehicle.Model}, Year: {vehicle.Year}, and Type of Gas: {vehicle.TypeOfGas}");
+                    Console.WriteLine($"------------------");
 
-                if (vehicle.Make == "Honda")
-                {
-                    Console.WriteLine($"Vehicle can hold {car.HowManyPassagers} and All Terrian: {car.IsItAllTerrian}");
-                }
+                    //Console.WriteLine($"Make: {vehicle.Make}, Model: {vehicle.Model}, Year: {vehicle.Year}, and Type of Gas: {vehicle.TypeOfGas}");
+
+                    if (vehicle.Make == "Honda")
+                    {
+                        Console.WriteLine($"Welcome to the {car.CompanyName} where the motto here is '{car.CompanySlogan}!' Lets see what we have:");
+                        Console.WriteLine($"Make: {vehicle.Make}, Model: {vehicle.Model}, Year: {vehicle.Year}, and Type of Gas: {vehicle.TypeOfGas}");
+                        Console.WriteLine($"Vehicle can hold {car.HowManyPassagers} and All Terrian: {car.IsItAllTerrian}");
+                    }
                 else if (vehicle.Make == "Ford")
-                {
-                    Console.WriteLine($"Vehicle can hold {truck.HowManyPassagers} and All Terrian: {truck.IsItAllTerrian}");
+                    {
+                        Console.WriteLine($"Welcome to the {truck.CompanyName} where the motto here is '{truck.CompanySlogan}!' Lets see what we have:");
+                        Console.WriteLine($"Make: {vehicle.Make}, Model: {vehicle.Model}, Year: {vehicle.Year}, and Type of Gas: {vehicle.TypeOfGas}");
+                        Console.WriteLine($"Vehicle can hold {truck.HowManyPassagers} and All Terrian: {truck.IsItAllTerrian}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Welcome to the {suv.CompanyName} where the motto here is '{suv.CompanySlogan}!' Lets see what we have:");
+                        Console.WriteLine($"Make: {vehicle.Make}, Model: {vehicle.Model}, Year: {vehicle.Year}, and Type of Gas: {vehicle.TypeOfGas}");
+                        Console.WriteLine($"Vehicle can hold {suv.HowManyPassagers} and All Terrian: {suv.IsItAllTerrian}");
+                    }
                 }
-                else
-                {
-                    Console.WriteLine($"Vehicle can hold {suv.HowManyPassagers} and All Terrian: {suv.IsItAllTerrian}");
-                }
-
-            }
+                
+            
 
 
 
